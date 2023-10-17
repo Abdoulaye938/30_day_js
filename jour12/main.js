@@ -5,14 +5,8 @@ let regEx = new RegExp(pattern);
 pattern = "love";
 let flag = "gi";
 regEx = new RegExp(pattern, flag);
-
-// Déclaration d'un modèle regex à l'aide de l'objet RegExp.
-// Écrire le modèle et le drapeau dans le constructeur RegExp
 regEx = new RegExp("love", "gi");
 
-// Création d'un modèle sans constructeur RegExp
-// Déclaration d'une expression régulière avec un
-// indicateur global et un indicateur insensible à la casse.
 regEx = /love/gi;
 
 // Méthodes des objets RegExpp
@@ -29,9 +23,6 @@ pattern = /love/g
 result = str.match(pattern)
 console.log(result)
 
-// search() : Teste une correspondance dans une chaîne. 
-// Il renvoie l'index de la correspondance, 
-// ou -1 si la recherche échoue.
 result = str.search(pattern)
 console.log(result)
 
@@ -154,8 +145,6 @@ pattern = /[^A-Za-z,. ]+/g
 matches = txt.match(pattern)
 console.log(matches)  
 
-// Correspondance exacte
-// Il devrait avoir ^ commençant et $ qui est une fin.
 pattern = /^[A-Z][a-z]{3,12}$/;
 const name = 'Asabeneh';
 result = pattern.test(name)

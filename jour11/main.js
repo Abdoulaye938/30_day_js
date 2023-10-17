@@ -42,10 +42,8 @@ const countries = [
 
 for (const [country, city] of countries) {
   console.log(country, city);
-} //Finland Helsinki
-// Sweden Stockholm
-// Norway Oslo
-
+} 
+//------------------------------------------
 const rectangle = {
   width: 20,
   height: 10,
@@ -67,7 +65,7 @@ const calculatePerimeter = (rectangle) => {
 };
 
 console.log(calculatePerimeter(rect)); // 60
-
+//----------------------------------
 const person = {
   firstName: 'Asabeneh',
   lastName: 'Yetayeh',
